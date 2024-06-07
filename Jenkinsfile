@@ -10,9 +10,13 @@ pipeline {
         Name = readMavenPom().getName()
     }
     stages {
-        stage('Build') {
+stage('Build') {
             steps {
-                def pom = readMavenPom file: 'pom.xml'
+                script {
+                    // Use a script block to execute Groovy code
+                    def pom = readMavenPom file: 'pom.xml'
+                    // Now you can use the 'pom' object for further processing
+                }
             }
         }
         stage('Test') {
