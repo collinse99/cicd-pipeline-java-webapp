@@ -4,10 +4,10 @@ pipeline {
         maven 'maven'
     }
      environment {
-    //     ArtifactId = readMavenPom().getArtifactId()
+         ArtifactId = "Erics Artifiact"
          Version = "1.1"
-    //     GroupId = readMavenPom().getGroupId()
-    //     Name = readMavenPom().getName()
+         GroupId = "ID_12"
+         Name = "Build_Eric"
      }
     stages {
 stage('Build') {
