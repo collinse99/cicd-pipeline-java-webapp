@@ -5,7 +5,7 @@ pipeline {
     }
     // environment {
     //     ArtifactId = readMavenPom().getArtifactId()
-         Version = "1.1"
+         Version = '1.1'
     //     GroupId = readMavenPom().getGroupId()
     //     Name = readMavenPom().getName()
     // }
