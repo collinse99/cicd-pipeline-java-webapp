@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean install package'
+                def pom = readMavenPom file: 'pom.xml'
             }
         }
         stage('Test') {
