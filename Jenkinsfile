@@ -14,7 +14,8 @@ stage('Build') {
             steps {
                 script {
                     // Use a script block to execute Groovy code
-                    def pom = readMavenPom file: 'pom.xml'
+                    //def pom = readMavenPom file: 'pom.xml'
+                    sh 'mvn clean install'
                     // Now you can use the 'pom' object for further processing
                 }
             }
